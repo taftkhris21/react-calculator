@@ -1,7 +1,11 @@
 import React from 'react'
 import './display.css'
 
-const Display = ({displayValue}) => {
+type DisplayProps = {
+    displayValue: string
+}
+
+const Display: React.FC<DisplayProps> = ({ displayValue }: DisplayProps) => {
     return <div className='display'>{displayValue}</div>
 }
 
